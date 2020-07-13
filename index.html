@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheltr</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+    </head>
+<body id="DebugContainer">
+    <div class="scroll z-100" id="scroll-dude">
+     <img src="imgs/scroll.png" class="img-fluid" alt="scroll dude">
+    </div>
+    <!-- Start Navbar -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-none z-1000">
+            <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="Logo Sheltr"></a>
+            <a class="navbar-item ml-auto btn" id="openBTN" onclick="openNav()" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="imgs/menu.png" alt="Menu Toggler Icon">
+            </a>
+        </nav>
+      </div>
+      <div id="mySidenav" class="sidenav">
+          <div class="d-flex top">
+            <div class="d-flex justify-content-start languages">
+                <a href="#" class="text-white">ES</a>
+                <a href="#" class="text-white">EN</a>
+            </div>
+            <div class="justify-content-end ml-auto">
+              <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+            </div>
+         </div>
+         <div class="d-flex flex-column justify-content-center" style="height:80%">
+          <a href="#" class="nav-link text-white">Sheltr</a>
+          <a href="#" class="nav-link text-white">Proyectos</a>
+          <a href="#" class="nav-link text-white">Servicios</a>
+          <a href="#" class="nav-link text-white">Nosotros</a>
+          <a href="#" class="nav-link text-white">Contacto</a>
+         </div>
+    </div>
+    <!-- End Navbar -->
+    <!-- Start First Content -->
+    <section class="container-fluid first-content">
+      <div class="row pt-5">
+        <div class="col-12 col-lg-4 col-md-6 h-100 text-dark fixed-content">
+          <h1>Lo hacemos <br> posible. <hr class="w-04"> </h1>
+          <p class="m-0 p-0">Trabajamos juntos para crear un refugio</p>
+          <p class="m-0 p-0">eficiente y personalizado, de la forma más</p>
+          <p class="m-0 p-0">sustentable y eficiente logrando la mejor</p>
+          <p class="m-0 p-0 ">calidad a menor precio.</p>
+        </div>
+        <div class="col-12 col-lg-8 col-md-6 ml-auto fixed-content-right">
+          <video autoplay loop muted id="myVideo">
+            <source src="vids/ilus2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+    <!-- End First Content -->
+    <div class="wrap p-5">
+      <!-- Image Lines -->
+    </div>
+    <!-- Start Second Content -->
+    <section class="container-fluid second-content">
+        <div class="row h-100">
+          <div class="col-12 col-md-6 col-lg-6">
+            <video autoplay loop muted id="myVideo">
+              <source src="vids/Ilus4.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 second2-content">
+            <h2>Lo hacemos <br> personalizado. <br> </h2><hr class="w-05">
+          <p class="m-0 p-0">En nuestro equipo trabajamos en conjunto a</p>
+          <p class="m-0 p-0">vos para llegar a un producto personalizado.</p>
+          </div>
+        </div>
+    </section>
+    <!-- End Second Content -->
+    <div class="wrap p-5">
+      <!-- Image Lines -->
+    </div>
+    <!-- Start Third Content -->
+    <section class="container-fluid first-content">
+      <div class="row pt-5">
+        <div class="col-12 col-lg-3 col-md-4 h-100 text-dark fixed-content">
+          <h1>Lo hacemos <br> mejor. <hr class="w-25"> </h1>
+          <p class="m-0 p-0">Creemos en el poder de nuestra</p>
+          <p class="m-0 p-0">tecnología & equipo. También en</p>
+          <p class="m-0 p-0">la participación de nuestro cliente</p>
+          <p class="m-0 p-0 ">durante todo el proceso.</p>
+        </div>
+        <div class="col-12 col-lg-8 col-md-6 ml-auto fixed-content-right">
+          <video autoplay loop muted id="myVideo">
+            <source src="vids/ilus1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+    <!-- End Third Content -->
+    <div class="wrap p-5">
+      <!-- Image Lines -->
+    </div>
+    <!-- Start Fourth Content -->
+    <section class="container-fluid downloads">
+      <div class="row bg-ccc">
+        <div class="container">
+          <div class="row">
+        <div class="col-12 col-lg-12 col-md-6 download-content p-5 z-10">
+          <h2>Descarga nuestra App</h2>
+          <p>Soñá tu refugio, nosotros lo hacemos posible.</p>
+          <div class="d-flex justify-content-start align-items-center">
+            <a href="#downloadIOS" class="btn m-0 p-0"><img src="imgs/ios.png" class="img-fluid" alt="Download Now App Store IOS"></a>
+            <a href="#downloadANDROID" class="btn m-0 p-0"><img src="imgs/android.png" class="img-fluid" alt="Download Now Google Play Android"></a>
+          </div>
+          
+        <div class="col-12 offset-6 fixed-content-download">
+          <img src="imgs/app-cel.png" class="img-fluid content-right" alt="App Download Celular">
+        </div>
+        </div>  
+        <div class="col-12 col-md-12 col-lg-6 ml-auto fixed-content-bottom z-1">
+          <video autoplay loop muted id="myVideo">
+            <source src="vids/ilus3_1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- End Fourth Content -->
+    <!-- Start Footer Content -->
+    <footer class="container-fluid bg-19 p-5">
+      <div class="row mobile-flex">
+        <div class="col-12 col-lg-4 col-md-6 text-white d-flex flex-column justify-content-center align-items-start">
+          <p class="m-0 p-0">Alianza Estratégica</p>
+          <ul class="nav navbar justify-content-end align-items-end">
+            <li class="nav-item">
+              <a href="#ibm" class="nav-link m-0 p-1"><img src="imgs/ibm.png" alt="IBM Partner"></a>              
+            </li>
+            <li class="nav-item">
+              <a href="#skm" class="nav-link m-0 p-1"><img src="imgs/skm.png"  alt="SKM Partner"></a>           
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 text-white d-flex flex-column justify-content-center align-items-center">
+          <p>Av. Alicia Moreau de Justo 740, Puerto Madero</p>
+          <p>C1007AAT - CABA, Argentina</p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 text-white d-flex flex-column justify-content-center align-items-end">
+          <p><img src="imgs/contact.png" class="img-fluid" alt="Contact Us Now"> contact@sheltr.com.ar</p>
+          <p><img src="imgs/call.png" class="img-fluid" alt="Call us now"> (+54) 11 4343-0158</p>
+          <ul class="nav navbar justify-content-end align-items-end">
+            <li class="nav-item">
+              <a href="#fb" class="nav-link"><img src="imgs/fb.png" width="25px" height="25px" alt="Join Us on Facebook Now"></a>              
+            </li>
+            <li class="nav-item">
+              <a href="#linkedin" class="nav-link"><img src="imgs/linkedin.png" width="25px" height="25px" alt="Check us on Linkedin"></a>           
+            </li>
+            <li class="nav-item">
+              <a href="#ig" class="nav-link"><img src="imgs/ig.png" width="25px" height="25px" alt="Follow Us on Instagram"></a>           
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-12 col-lg-12 col-md-12 text-white d-flex justify-content-center align-items-center">
+          <p>Sheltr All Rights Reserved</p>
+        </div>
+      </div>
+
+      
+      <div class="row footer-mobile">
+        <div class="col-12 col-lg-4 col-md-6 text-white">
+          <p class="m-0 p-0">Alianza Estratégica</p>
+          <ul class="nav navbar">
+            <li class="nav-item">
+              <a href="#ibm" class="nav-link m-0 p-1"><img src="imgs/ibm.png" alt="IBM Partner"></a>              
+            </li>
+            <li class="nav-item">
+              <a href="#skm" class="nav-link m-0 p-1"><img src="imgs/skm.png"  alt="SKM Partner"></a>           
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 text-white">
+          <p>Av. Alicia Moreau de Justo 740, Puerto Madero</p>
+          <p>C1007AAT - CABA, Argentina</p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 text-white">
+          <p><img src="imgs/contact.png" class="img-fluid" alt="Contact Us Now"> contact@sheltr.com.ar</p>
+          <p><img src="imgs/call.png" class="img-fluid" alt="Call us now"> (+54) 11 4343-0158</p>
+          <ul class="nav navbar">
+            <li class="nav-item">
+              <a href="#fb" class="nav-link"><img src="imgs/fb.png" width="25px" height="25px" alt="Join Us on Facebook Now"></a>              
+            </li>
+            <li class="nav-item">
+              <a href="#linkedin" class="nav-link"><img src="imgs/linkedin.png" width="25px" height="25px" alt="Check us on Linkedin"></a>           
+            </li>
+            <li class="nav-item">
+              <a href="#ig" class="nav-link"><img src="imgs/ig.png" width="25px" height="25px" alt="Follow Us on Instagram"></a>           
+            </li>
+          </ul>
+        </div>
+        
+        <div class="col-12 col-lg-12 col-md-12 text-white">
+          <p>Sheltr All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- End Footer Content -->
+      <script src="js/jquery.js"></script>
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("openBTN").style.display = "none";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("openBTN").style.display = "block";
+        }
+        </script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

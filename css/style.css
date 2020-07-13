@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin:0;padding:0;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    direction: ltr;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;direction: rtl;
+}
+ 
+/* button */
+::-webkit-scrollbar-button {
+    background: #fff;direction: rtl;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(250, 250, 250);direction: rtl;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ccc;direction: rtl;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;direction: rtl;
+}
+ 
+/* The track NOT covered by the handle.
+::-webkit-scrollbar-track-piece {
+    background: #000;
+}
+ 
+/* Corner */
+::-webkit-scrollbar-corner {
+    background: #ccc;direction: rtl;
+}
+ 
+/* Resizer */
+::-webkit-resizer {
+    background: #ccc;direction: rtl;    
+}
+
+/* navbar side */
+/* navbar side */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.75);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .fixed-top {
+      z-index:99;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+ .sidenav .top-bar {
+     position: absolute;
+     top:0;
+ }
+.languages {
+    padding:0;
+    margin:0;
+}
+.languages a {
+    margin-left:10px;
+    padding:10px;
+}
+.closebtn {
+    font-size:55px !important;
+    padding:0 !important;
+    margin-top:-20px !important;
+    margin-right:10px !important;
+}
+
+
+/* navbar side */
+/* navbar side */
+
+
+/* first-content */
+/* first-content */
+
+.first-content {
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+.bg-none {
+    background:transparent;
+}
+.mt-15 {
+    padding-top:15em;
+}
+.fixed-content {
+    position: absolute;
+    top:15em;
+    left:20em;
+    z-index: 100;
+}
+.fixed-content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size:4em;
+    font-weight: bold;
+}
+.fixed-content p {
+    font-family: 'Raleway', sans-serif;
+}
+#myVideo {
+    width:100%;
+    z-index: 20;
+    overflow: hidden;
+  }
+.fixed-content-right {
+    position: absolute;
+    top:5em;
+    right:5em;
+    z-index: 20;
+}
+.w-05 {
+    width: 11%;
+}
+.w-04 {
+    display: inline-block;
+    width:10%;
+}
+
+hr {
+    border:1.5px solid black;
+}
+/* first-content */
+/* first-content */
+.wrap {
+ background:#fff;
+}
+/* second-content */
+/* second-content */
+.second-content {
+    width:100%;
+    height: 100vh;
+}
+
+.second2-content h2 {
+    font-size:3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.second2-content p {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* second-content */
+/* second-content */
+
+
+/* download section */
+.downloads {
+    width:100%;
+    height: 100vh;
+    position: relative; 
+}
+.bg-ccc {
+    background:#ccc;
+    z-index: 10 !important;
+}
+
+.download-content {
+    background:#ccc;
+    z-index: 9;
+}
+.download-content h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size:4em;
+    font-weight: bold;
+}
+.download-content p {
+    font-family: 'Raleway', sans-serif;
+    font-size:1em;
+    font-weight: 600;
+    padding-top:1em;
+}
+.fixed-content-bottom {
+    position: absolute;
+    top:12em;
+}
+.fixed-content-download {
+    position: absolute;
+    top:0;
+    z-index: 101;
+    right:0;
+}
+.content-right {
+    position: absolute;
+    top:0;
+    right:0;
+}
+/* download section */
+/* footer section */
+footer {
+    width:100%;
+    height: auto;
+    font-weight: 500;
+    z-index: 1000;
+}
+.bg-19 {
+    background:#191919;
+}
+/* footer section */
+/* z index */
+.z-1 {
+    z-index: 1 !important;
+}
+.z-10 {
+    z-index: 10 !important;
+}
+.z-100 {
+    z-index: 100 !important;
+}
+.z-1000 {
+    z-index: 1000 !important;
+}
+/* navbar side */
+/* navbar side */
+
+.scroll {
+    position: fixed;
+    bottom:1em;
+    right:1em;
+}
+.footer-mobile {
+    display: none;
+}
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+  }
+
+  /* navbar side */
+/* navbar side */
+
+@media screen and (max-width:1440px){
+    .download-content h2{
+        font-size: 3em;
+    }
+    .fixed-content {
+        left:8em;
+        min-width: 70%;
+    }
+    .second2-content h2{
+       font-size:4em;
+    }
+    .fixed-content-bottom {
+        min-width: 75%;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .fixed-content-bottom {
+        min-width: 65%;
+    }
+}
+  @media screen and (max-width: 1024px){
+    .fixed-content-right{
+        top:5em;
+        right:0;
+    }
+    .download-content{
+        text-align: center;
+        margin:0 auto;
+    }
+    .fixed-content {
+        top:10em;
+        left:3em;
+        min-width: 70%;
+    }
+    .fixed-content-download{
+        display: none;
+    }
+    .fixed-content-bottom{
+        display: none;
+    }
+    .downloads{
+        height: 45vh;
+    }
+    .scroll {
+        display: none;
+    }
+  }
+  @media all and (max-width:580px) {
+  
+    .mobile-flex {
+        display: block;
+    }
+  }
+  @media all and (max-width: 560px) {
+    .fixed-content-right{
+        top:20em;
+        right:0;
+    }
+    .fixed-content {
+        top:8em;
+        left:0;
+        padding-left:2em;
+    }
+    .fixed-content h1 {
+        font-size:2.5em;
+    }
+    .fixed-content p {
+        font-size:.85em;
+    }
+    #myVideo {
+        min-width: auto;
+        min-height: auto;
+        overflow: hidden;
+    }
+    .fixed-content-download{
+        display: none;
+    }
+    .second2-content{
+        padding-left: 3em;
+    }
+    .second2-content h2{
+        font-size:3em;
+     }
+     .mobile-flex {
+         display:none;
+     }
+     .footer-mobile {
+         display: block;
+     }
+  }
