@@ -107,7 +107,7 @@ body {
 
 .first-content {
     width:100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 .bg-none {
@@ -137,8 +137,8 @@ body {
   }
 .fixed-content-right {
     position: absolute;
-    top:5em;
-    right:5em;
+    top:7em;
+    right:0;
     z-index: 20;
 }
 .w-05 {
@@ -161,7 +161,7 @@ hr {
 /* second-content */
 .second-content {
     width:100%;
-    height: 100vh;
+    height: 40vh;
 }
 
 .second2-content h2 {
@@ -341,6 +341,9 @@ footer {
     }
     .fixed-content-download{
         display: none;
+    }
+    .second-content {
+        height: 70vh;
     }
     .second2-content{
         padding-left: 3em;
