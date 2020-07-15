@@ -4,6 +4,7 @@
     -webkit-box-sizing: border-box;
     margin:0;padding:0;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     direction: ltr;
@@ -252,6 +253,23 @@ footer {
     position: fixed;
     bottom:1em;
     right:1em;
+    padding:2em;
+}
+.image-container {
+    width: 75px;
+    height: 100%;
+    position: fixed;
+    top: 13em;
+    left:3em;
+    z-index: 10001;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../imgs/scroll/scroll-1.png');
+  }
+}
+.scroll img {
+    width:75px;
+    height: 75px;
 }
 .footer-mobile {
     display: none;

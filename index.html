@@ -13,6 +13,7 @@
     <div class="scroll z-100" id="scroll-dude">
      <img src="imgs/scroll.png" class="img-fluid" alt="scroll dude">
     </div>
+    <div class='image-container'></div>
     <!-- Start Navbar -->
     <div class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-none z-1000">
@@ -217,5 +218,82 @@
         }
         </script>
       <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+        const scrollImages = {
+          1:'./imgs/scroll/scroll-1.png',
+          2:'./imgs/scroll/scroll-2.png',
+          3:'./imgs/scroll/scroll-3.png',
+          4:'./imgs/scroll/scroll-4.png',
+          5:'./imgs/scroll/scroll-5.png',
+          6:'./imgs/scroll/scroll-6.png',
+          7:'./imgs/scroll/scroll-7.png',
+          8:'./imgs/scroll/scroll-8.png',
+          9:'./imgs/scroll/scroll-9.png',
+          10:'./imgs/scroll/scroll-10.png',
+          11:'./imgs/scroll/scroll-11.png',
+          12:'./imgs/scroll/scroll-12.png',
+          13:'./imgs/scroll/scroll-13.png',
+          14:'./imgs/scroll/scroll-14.png',
+          15:'./imgs/scroll/scroll-15.png',
+          16:'./imgs/scroll/scroll-16.png'
+        };
+        // Global variable to control the scrolling behavior
+const step = 30; // For each 30px, change an image
+function trackScrollPosition() {
+  const y = window.scrollY;
+  const label = Math.min(Math.floor(y/230) + 1, 40);
+  const imageToUse = scrollImages[label];
+  // Change the background image
+  $('.image-container').delay(100).css('background-image', `url('${imageToUse}')`);
+ 
+}
+$(document).ready(()=>{
+  $(window).scroll(()=>{
+    trackScrollPosition();
+  })
+});
+// Scroll to specific values
+// scrollTo is the same
+
+
+
+
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+      </script>
 </body>
 </html>
