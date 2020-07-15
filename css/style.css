@@ -254,6 +254,8 @@ footer {
     bottom:1em;
     right:1em;
     padding:2em;
+    width:75px;
+    height: 75px;
 }
 .image-container {
     width: 75px;
