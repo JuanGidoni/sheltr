@@ -284,6 +284,49 @@ footer {
   /* navbar side */
 /* navbar side */
 
+/* sheltr page section 1 */
+
+.sheltr {
+    width:100%;
+    padding-left:200px;
+    padding-top:200px;
+}
+.text-sheltr {
+    font-size:32px;
+}
+.muted {
+    color:#818181;
+}
+.sheltr-h2 {
+    font-size:86px;
+}
+.sheltr-p{
+    padding-top:2em;
+    font-size:24px;
+}
+.mision {
+    background: #cacaca;
+}
+.mision-text {
+    font-size:64px;
+    padding-right: 1em;
+}
+.rounded-sheltr{
+    border-radius: 1em;
+    padding: 1em;
+}
+.vision {
+    background:#e4e4e4;
+}
+.vision-text {
+    font-size:64px;
+    padding-right: 1em;
+}
+.tecnologia {
+    background:#e4e4e4;
+}
+/* sheltr page section 1 */
+
 @media screen and (max-width:1440px){
     .download-content h2{
         font-size: 3em;
