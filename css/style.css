@@ -474,6 +474,11 @@ a:hover {
     .mobile-flex {
         display: block;
     }
+    
+    .sheltr{
+        padding-left:0;
+        padding-top:0;
+    }
   }
   @media all and (max-width: 560px) {
     .fixed-content-right{
