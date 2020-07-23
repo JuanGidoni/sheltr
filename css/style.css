@@ -267,7 +267,17 @@ footer {
     background-repeat: no-repeat;
     background-image: url('../imgs/scroll/scroll-1.png');
   }
-
+.cursor-pointer {
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:#191919;
+}
+a:hover {
+    text-decoration: none;
+    color:#545454;
+}
 .scroll img {
     width:75px;
     height: 75px;
@@ -379,7 +389,20 @@ footer {
     padding: 16px 32px;
   }
 
-
+.indicators li {
+    text-decoration: none;
+    list-style: none;
+}
+.fullscreen {
+    position: relative;
+}
+.fullscreen img {
+    position: absolute;
+    top:15px;
+    right:15px;
+    cursor: pointer;
+    z-index: 999;
+}
 /* proyecto page section */
 @media screen and (max-width:1440px){
     .download-content h2{
