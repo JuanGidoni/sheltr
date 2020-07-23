@@ -270,7 +270,7 @@ footer {
 .cursor-pointer {
     cursor: pointer;
 }
-.z-1000 {
+.z-10000 {
     z-index: 9999;
 }
 a{
@@ -291,7 +291,10 @@ a:hover {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-
+    .sheltr{
+        padding-left:100px;
+        padding-top:100px;
+    }
   }
 .nav-link img {
     display: none;
@@ -306,8 +309,6 @@ a:hover {
 
 .sheltr {
     width:100%;
-    padding-left:200px;
-    padding-top:200px;
 }
 .text-sheltr {
     font-size:32px;
@@ -317,6 +318,7 @@ a:hover {
 }
 .sheltr-h2 {
     font-size:86px;
+    margin:0;padding:0;
 }
 .sheltr-p{
     padding-top:2em;
@@ -452,6 +454,19 @@ a:hover {
     }
     .scroll {
         display: none;
+    }
+    .sheltr{
+        padding-left:100px;
+        padding-top:100px;
+    }
+    .sheltr-h2{
+        font-size:54px;
+    }
+    .mision-text{
+        font-size: 32px;
+    }
+    .vision-text{
+        font-size:32px;
     }
   }
   @media all and (max-width:580px) {
