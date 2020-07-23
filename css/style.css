@@ -270,6 +270,9 @@ footer {
 .cursor-pointer {
     cursor: pointer;
 }
+.z-1000 {
+    z-index: 9999;
+}
 a{
     text-decoration: none;
     color:#191919;
