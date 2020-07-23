@@ -476,8 +476,8 @@ a:hover {
     }
     
     .sheltr{
-        padding-left:0;
-        padding-top:0;
+        padding-left:100px;
+        padding-top:100px;
     }
   }
   @media all and (max-width: 560px) {
@@ -519,4 +519,10 @@ a:hover {
      .footer-mobile {
          display: block;
      }
+     
+    
+    .sheltr{
+        padding-left:25px;
+        padding-top:75px;
+    }
   }
