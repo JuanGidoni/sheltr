@@ -8,6 +8,8 @@
 }
 body {
     direction: ltr;
+    background: rgb(222,220,220);
+    background: linear-gradient(180deg, rgba(222,220,220,1) 0%, rgba(255,255,255,1) 51%);      
 }
 
 /* width */
@@ -97,19 +99,62 @@ body {
     margin-top:-20px !important;
     margin-right:10px !important;
 }
-
+.nav-link {
+    font-size:32px;
+    margin-right: 1em;
+    padding-top:1em;
+}
 
 /* navbar side */
 /* navbar side */
 
-
+.linea-right {
+    position: absolute;
+    right:0;
+}
+.bg-red {
+    background:red;
+}
 /* first-content */
 /* first-content */
 
 .first-content {
     width:100%;
     height: 80vh;
-    position: relative;
+ }
+.bg-posible {
+    background-image: url('../imgs/lohacemosposible.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-texts {
+    padding-left: 8em;
+}
+.hacemos {
+    padding-left:10em;
+    padding-top:5em;
+}
+.mejor {
+    padding-left:10em;
+    padding-top:5em;
+}
+.main-text h1{
+    font-size:65px;
+    margin:0; padding:0; 
+}
+.main-text-2 h2 {
+    font-size:26px;
+    font-weight: 400;
+}
+.main-text-gray {
+    color:#6F6F6E;
+}
+.main-text-blue {
+    color:#1765DC;
+}
+.main-text-3 {
+    color:#535352;
 }
 .bg-none {
     background:transparent;
@@ -142,6 +187,11 @@ body {
     right:0;
     z-index: 20;
 }
+.icon-download {
+    width:200px;
+    height: 75px;
+    margin-right: 25px;
+}
 .w-05 {
     width: 11%;
 }
@@ -156,7 +206,6 @@ hr {
 /* first-content */
 /* first-content */
 .wrap {
- background:#fff;
  width:100%;
 position: relative;
 }
@@ -165,7 +214,6 @@ position: relative;
 .second-content {
     width:100%;
     height: 40vh;
-    position: relative;
 }
 
 .second2-content h2 {
@@ -177,8 +225,17 @@ position: relative;
     font-family: 'Raleway', sans-serif;
 }
 
-
-
+.box-rounded {
+    border-radius: 50px;
+    background:#F3F3F3;
+    box-shadow: 3px 5px 3px 2px rgba(0,0,0,.1);
+    width:350px;
+    height: 350px;
+    margin:0 auto;
+}
+.box-rounded p {
+    font-size:1.3em;
+}
 /* second-content */
 /* second-content */
 

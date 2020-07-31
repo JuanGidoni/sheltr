@@ -12,33 +12,54 @@
 <body id="DebugContainer">
     <div class='image-container d-none d-lg-block'></div>
     <!-- Start Navbar -->
-    <div class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-none z-1000">
-            <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="Logo Sheltr"></a>
-            <a class="navbar-item ml-auto btn" id="openBTN" onclick="openNav()" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="fixed-top z-1000">
+      <nav class="navbar navbar-expand-lg navbar-light bg-none z-1000">
+          <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="Logo Sheltr"></a>
+            <button class="navbar-toggler" type="button" onclick="openNav()" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <img src="imgs/menu.png" alt="Menu Toggler Icon">
-            </a>
-        </nav>
-      </div>
-      <div id="mySidenav" class="sidenav">
-          <div class="d-flex top">
-            <div class="d-flex justify-content-start languages">
-                <a href="#" class="text-white">ES</a>
-                <a href="#" class="text-white">EN</a>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto pr-5">
+                <li class="nav-item active">
+                  <a class="nav-link" href="sheltr.html">Sheltr</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
-            <div class="justify-content-end ml-auto">
-              <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
-            </div>
-         </div>
-         <div class="d-flex flex-column justify-content-center" style="height:80%">
-            <a href="index.html" class="nav-link text-white">Inicio <img src="imgs/back.png" class="img-fluid" alt="Ir a Inicio"></a>
-          <a href="proyectos.html" class="nav-link text-white">Proyectos <img src="imgs/back.png" class="img-fluid" alt="Ir a Proyectos"></a>
-          <a href="servicios.html" class="nav-link text-white">Servicios <img src="imgs/back.png" class="img-fluid" alt="Ir a Servicios"></a>
-          <a href="nosotros.html" class="nav-link text-white">Nosotros <img src="imgs/back.png" class="img-fluid" alt="Ir a Nosotros"></a>
-          <a href="contacto.html" class="nav-link text-white">Contacto <img src="imgs/back.png" class="img-fluid" alt="Ir a Contacto"></a>
-         </div>
+          </nav>
     </div>
-    <!-- End Navbar -->
+    <div id="mySidenav" class="sidenav z-10000">
+        <div class="d-flex top">
+          <div class="d-flex justify-content-start languages">
+              <a href="#" class="text-white">ES</a>
+              <a href="#" class="text-white">EN</a>
+          </div>
+          <div class="justify-content-end ml-auto">
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+          </div>
+       </div>
+       <div class="d-flex flex-column justify-content-center" style="height:80%">
+        <a href="index.html" class="nav-link text-white">Inicio <img src="imgs/back.png" class="img-fluid" alt="Ir a Inicio"></a>
+        <a href="sheltr.html" class="nav-link text-white">Sheltr <img src="imgs/back.png" class="img-fluid" alt="Ir a Sheltr"></a>
+        <a href="proyectos.html" class="nav-link text-white">Proyectos <img src="imgs/back.png" class="img-fluid" alt="Ir a Proyectos"></a>
+      <a href="servicios.html" class="nav-link text-white">Servicios <img src="imgs/back.png" class="img-fluid" alt="Ir a Servicios"></a>
+      <a href="nosotros.html" class="nav-link text-white">Nosotros <img src="imgs/back.png" class="img-fluid" alt="Ir a Nosotros"></a>
+      <a href="contacto.html" class="nav-link text-white">Contacto <img src="imgs/back.png" class="img-fluid" alt="Ir a Contacto"></a>
+       </div>
+  </div>
+  <!-- End Navbar -->
     <!-- Sheltr Page Section 1 -->
         <section class="container-fluid sheltr">
 

@@ -18,10 +18,30 @@
     <div class="fixed-top z-1000">
         <nav class="navbar navbar-expand-lg navbar-light bg-none z-1000">
             <a class="navbar-brand" href="./index.html"><img src="./imgs/logo.png" alt="Logo Sheltr"></a>
-            <a class="navbar-item ml-auto btn" id="openBTN" onclick="openNav()" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <img src="imgs/menu.png" alt="Menu Toggler Icon">
-            </a>
-        </nav>
+              <button class="navbar-toggler" type="button" onclick="openNav()" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="imgs/menu.png" alt="Menu Toggler Icon">
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto pr-5">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="sheltr.html">Sheltr</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
       </div>
       <div id="mySidenav" class="sidenav z-10000">
           <div class="d-flex top">
@@ -43,99 +63,152 @@
          </div>
     </div>
     <!-- End Navbar -->
-        <!-- Start Fourth Content -->
-        <section class="container-fluid downloads pt-md-5 pt-5 z-100">
-          <div class="row bg-ccc">
-            <div class="container bg-ccc">
-              <div class="row">
-            <div class="col-12 col-lg-12 col-md-6 download-content p-5 z-10">
-              <h2>Descarga nuestra App</h2>
-              <p>Soñá tu refugio, nosotros lo hacemos posible.</p>
-              <div class="d-flex justify-content-start align-items-center">
-                <a href="#downloadIOS" class="btn m-0 p-0"><img src="imgs/ios.png" class="img-fluid" alt="Download Now App Store IOS"></a>
-                <a href="#downloadANDROID" class="btn m-0 p-0"><img src="imgs/android.png" class="img-fluid" alt="Download Now Google Play Android"></a>
-              </div>
-              
-            <div class="col-12 offset-6 fixed-content-download">
-              <img src="imgs/app-cel.png" class="img-fluid content-right" alt="App Download Celular">
-            </div>
-            </div>  
-            <div class="col-12 col-md-12 col-lg-6 ml-auto fixed-content-bottom z-1 pt-5">
-              <video autoplay loop muted id="myVideo">
-                <source src="vids/ilus3_1.mp4" type="video/mp4" />
-              </video>
-            </div>
-            
-          </div>
-          </div>
-          </div>
-        </section>
-        <!-- End Fourth Content -->
-        <div class="wrap p-5 mt-5 d-flex flex-column justify-content-center align-items-center">
+       
+        <div class="wrap p-5 d-flex flex-column justify-content-center align-items-center">
       
         </div>
     <!-- Start First Content -->
-    <section class="container-fluid first-content z-100">
-      <div class="row pt-5">
-        <div class="col-12 col-lg-4 col-md-6 h-100 text-dark fixed-content">
-          <h1>Lo hacemos <br> posible. <hr class="w-04"> </h1>
-          <p class="m-0 p-0">Trabajamos juntos para crear un refugio</p>
-          <p class="m-0 p-0">eficiente y personalizado, de la forma más</p>
-          <p class="m-0 p-0">sustentable y eficiente logrando la mejor</p>
-          <p class="m-0 p-0 ">calidad a menor precio.</p>
+    <section class="container-fluid z-100 ">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-lx-6">
+          <div class="container pt-md-5">
+            <div class="row main-texts">
+
+              <div class="col-12 main-text pb-md-5">
+                <h1>Tu refugio al alcance de <br>tu mano</h1>
+              </div>
+
+              <div class="col-12 main-text-2 pb-md-3">
+                <h2><strong class="main-text-gray">Una plataforma para</strong> <strong class="main-text-blue">construir lo que <br>quieras, donde y cómo quieras.</strong></h2>
+              </div>
+              <div class="col-12 main-text-3">
+                <p>Junto a vos y apoyados en nuestra tecnología, vamos <br> a crear y construir tu espacio para que vivas y <br>trabajes mejor que ahora.</p>
+              </div>
+              <div class="col-12 download d-md-flex flex-row pt-5">
+                <img src="imgs/ios.png" class="img-fluid icon-download" alt="download app on ios">
+                <img src="imgs/android.png" class="img-fluid icon-download" alt="download app on Android">
+              </div>
+          
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-8 col-md-6 ml-auto fixed-content-right">
-          <video autoplay loop muted id="myVideo">
-            <source src="vids/ilus2.mp4" type="video/mp4" />
-          </video>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-lx-6 text-center pt-md-5 pt-lg-0">
+          <img src="imgs/app-cel.png" class="img-fluid" alt="Descarga la app">
         </div>
       </div>
     </section>
     <!-- End First Content -->
-    <div class="wrap p-5 d-flex flex-column justify-content-center align-items-center z-1">
-      <img src="./imgs/linea.png" alt="Linea Divisora" class="img-fluid">
-    </div>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-4 text-center">
+          <img src="imgs/linea.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </section>
     <!-- Start Second Content -->
-    <section class="container-fluid second-content mb-5 mt-5">
-        <div class="row h-100">
-          <div class="col-12 col-md-6 col-lg-6">
-            <video autoplay loop muted id="myVideo">
-              <source src="vids/Ilus4.mp4" type="video/mp4" />
-            </video>
+    <section class="container-fluid p-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-lx-4 text-center d-flex">
+            <div class="box-rounded d-flex flex-column justify-content-center align-items-center mt-3 mt-lg-0">
+              <img src="imgs/home-services/grupo1.png" class="img-fluid" alt="Selecciona, diseña y gestiona.">
+              <p class="pt-3">Selecciona, diseña <br>y gestiona.</p>
+            </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-6 second2-content">
-            <h2>Lo hacemos <br> personalizado. <br> </h2><hr class="w-05">
-          <p class="m-0 p-0">En nuestro equipo trabajamos en conjunto a</p>
-          <p class="m-0 p-0">vos para llegar a un producto personalizado.</p>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-lx-4 text-center d-flex">
+ 
+            <div class="box-rounded d-flex flex-column justify-content-center align-items-center mt-3 mt-lg-0">
+            <img src="imgs/home-services/grupo2.png" alt="Elegí tu Proyect Manager">
+            <p class="pt-3">Elegí tu Proyect Manager</p>
+          </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-lx-4 text-center">
+            <div class="box-rounded d-flex flex-column justify-content-center align-items-center mt-3 mt-lg-0">
+            <img src="imgs/home-services/grupo3.png" alt="¡Empezá tu obra!">
+            <p class="pt-3">¡Empezá tu obra!</p>
+          </div>
           </div>
         </div>
     </section>
     <!-- End Second Content -->
-    <div class="wrap p-5 d-flex flex-column justify-content-center align-items-center z-1">
-      <img src="./imgs/linea2.png" alt="Linea Divisora" class="img-fluid">
-    </div>
-    <!-- Start Third Content -->
-    <section class="container-fluid first-content mb-5 z-10">
-      <div class="row pt-5">
-        <div class="col-12 col-lg-3 col-md-4 h-100 text-dark fixed-content mb-5">
-          <h1>Lo hacemos <br> mejor. <hr class="w-25"> </h1>
-          <p class="m-0 p-0">Creemos en el poder de nuestra</p>
-          <p class="m-0 p-0">tecnología & equipo. También en</p>
-          <p class="m-0 p-0">la participación de nuestro cliente</p>
-          <p class="m-0 p-0 ">durante todo el proceso.</p>
-        </div>
-        <div class="col-12 col-lg-8 col-md-6 ml-auto fixed-content-right">
-          <video autoplay loop muted id="myVideo">
-            <source src="vids/ilus1.mp4" type="video/mp4" />
-          </video>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-4 offset-8 text-center">
+          <img src="imgs/linea.png" class="img-fluid" alt="">
         </div>
       </div>
     </section>
+    <!-- Start Third Content -->
+    <section class="container-fluid z-10 p-5">
+     <div class="row">
+       <div class="col-sm-12 col-md-4 col-lg-4 hacemos">
+         <h2>Lo hacemos <br>
+          posible.</h2>
+          <p>A menor costo</p>
+          <p><img src="imgs/break-line.png" class="img-fluid" alt="break line"></p>
+          <p>Reducimos y transparentamos los gastas con nuestra tecnología y equipo.</p>
+       </div>
+       <div class="col-sm-12 col-md-8 col-lg-8">
+         <img src="imgs/lohacemosposible.png" class="img-fluid" alt="Lo hacemos posible">
+       </div>
+     </div>
+    </section>
     <!-- End Third Content -->
-    <div class="wrap p-5 mb-5 z-1">
-      <!-- Image Lines -->
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center"> 
+          <img src="imgs/linea-break2.png" class="img-fluid" alt="line-break 2">
+        </div>
+      </div>
+    </section>
+ <!-- Start Fourth Content -->
+ <section class="container-fluid pt-md-5 pt-5 z-100">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-6 text-center">
+      <img src="imgs/lohacemospersonalizado.png" class="img-fluid" alt="">
     </div>
+    <div class="col-12 col-md-6 col-lg-6">
+      <h2>Lo hacemos <br>
+        personalizado.</h2>
+        <p>En menos tiempo</p>
+        
+        <p><img src="imgs/break-line.png" class="img-fluid" alt="break line"></p>
+        <p>Vamos a estar siempre conectados con nuestra app para <br>lograr un espacio que supere tus expectativas y cumpla <br> tus necesidades.</p>
+    </div>
+  </div>
+</section>
 
+<section class="container-fluid">
+  <div class="row">
+    <div class="col-12 text-center">
+      <img src="imgs/linea2.png" class="img-fluid" alt="">
+    </div>
+  </div>
+</section>
+<!-- End Fourth Content -->
+
+ <!-- Start Fifth Content -->
+ <section class="container-fluid z-10 p-5">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-4 mejor">
+      <h2>Lo hacemos <br>
+       mejor.</h2>
+       <p>Ganá calidad</p>
+       <p><img src="imgs/break-line.png" class="img-fluid" alt="break line"></p>
+       <p>Somos Jovenes capacitados, empoderados con tecnología <br>propia. Automatizando procesos, adaptándose dando la <br>solución para los problemas de tu hogar y tus exigencias.</p>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-8">
+      <img src="imgs/lohacemosmejor.png" class="img-fluid" alt="Lo hacemos posible">
+    </div>
+  </div>
+ </section>
+
+ <!-- End Fifth Content -->
+ <section class="container-fluid">
+  <div class="row">
+    <div class="col-12 text-center p-5">
+    </div>
+  </div>
+</section>
     <!-- Start Footer Content -->
     <!-- Footer -->
 <footer class="page-footer font-small bg-19">
