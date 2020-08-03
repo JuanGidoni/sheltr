@@ -674,7 +674,12 @@ a:hover {
      .footer-mobile {
          display: block;
      }
-     
+     .icon-download {
+        margin-right: 0;
+        width:145px;
+        height: 45px;
+        padding-right: 10px;
+    }
     
     .sheltr{
         padding-left:25px;
