@@ -11,7 +11,9 @@ body {
     background: rgb(222,220,220);
     background: linear-gradient(180deg, rgba(222,220,220,1) 0%, rgba(255,255,255,1) 51%);      
 }
-
+.navbar-brand {
+    padding-left:1em;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;direction: rtl;
