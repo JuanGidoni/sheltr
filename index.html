@@ -11,7 +11,7 @@
     </head>
 <body id="DebugContainer">
     <div class="scroll z-100" id="scroll-dude">
-     <a href="#botom"><img src="imgs/scroll.png" class="img-fluid" alt="scroll dude"></a>
+     <img src="imgs/scroll.png" class="img-fluid cursor" id="botom" alt="scroll dude">
     </div>
     <div class='image-container d-none d-lg-block'></div>
     <div class="navpadding"></div>
@@ -207,7 +207,7 @@
 
     <!-- Start Footer Content -->
     <!-- Footer -->
-<footer class="page-footer font-small bg-19" id="botom">
+<footer class="page-footer font-small bg-19">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center">
@@ -282,28 +282,9 @@
     <script src="js/jquery.js"></script>
     <script>
 
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-  event.preventDefault();
-  $('html, body').animate({
-    scrollTop: target.offset().top
-  }, 5000, function() {
-    var $target = $(target);
-    $target.focus();
-    if ($target.is(":focus")) {
-      return false;
-    } else {
-      $target.attr('tabindex','-1'); 
-      $target.focus();
-    };
-  });
-}
-    }
+$('#botom').click(function() {
+  var y = $(window).scrollTop();  //your current y position on the page
+$(window).scrollTop(y+1000);
 });
 
       function openNav() {
@@ -317,6 +298,6 @@ $('a[href*=#]:not([href=#])').click(function() {
       }
       </script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/scroll.js"></script>
+    
 </body>
 </html>
