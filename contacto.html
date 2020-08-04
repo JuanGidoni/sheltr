@@ -99,25 +99,30 @@
                         </div>
                       </div>
                       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-0 p-0 mb-md-5 p-md-5">
-                        <form class="p-5">
+                        <form class="p-5" action="mail.php" method="POST">
                           <div class="form-group p-3">
-                            <label for="nombreApellido" class="pb-2">Nombre y Apellido</label>
-                            <input type="text" class="form-control" id="nombreApellido" placeholder="Nombre y Apellido completo">
+                            <label for="name" class="pb-2">Nombre y Apellido</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Nombre y Apellido completo">
+                            
                           </div>
                           <div class="form-group p-3">
                             <label for="email" class="pb-2">Correo electrónico</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+                           
                           </div>
                           <div class="form-group p-3">
-                            <label for="tel" class="pb-2">Teléfono</label>
-                            <input type="tel" class="form-control" id="tel" placeholder="+54 11 4444-4444">
+                            <label for="phone" class="pb-2">Teléfono</label>
+                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="+54 11 4444-4444">
+                            
                           </div>
                           <div class="form-group p-3">
-                            <label for="Mensaje" class="pb-2">Mensaje</label>
-                            <textarea class="form-control" id="Mensaje" placeholder="Escribinos un mensaje" row="3"></textarea>
+                            <label for="message" class="pb-2">Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="Escribinos un mensaje" row="3"></textarea>
+                            
                           </div>
                           <div class="form-group mx-auto text-center p-3">
-                            <button type="submit" class="btn btn-dark w-25 p-1 text-center text-uppercase">Enviar</button>
+                            <a class="btn btn-dark text-white" onclick="validateForm();">ENVIAR</a>
+                            <small class="status form-text text-muted"></small>
                           </div>
                         </form>
                       </div>
@@ -212,82 +217,7 @@
           }
           </script>
         <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-          const scrollImages = {
-            1:'./imgs/scroll/scroll-1.png',
-            2:'./imgs/scroll/scroll-2.png',
-            3:'./imgs/scroll/scroll-3.png',
-            4:'./imgs/scroll/scroll-4.png',
-            5:'./imgs/scroll/scroll-5.png',
-            6:'./imgs/scroll/scroll-6.png',
-            7:'./imgs/scroll/scroll-7.png',
-            8:'./imgs/scroll/scroll-8.png',
-            9:'./imgs/scroll/scroll-9.png',
-            10:'./imgs/scroll/scroll-10.png',
-            11:'./imgs/scroll/scroll-11.png',
-            12:'./imgs/scroll/scroll-12.png',
-            13:'./imgs/scroll/scroll-13.png',
-            14:'./imgs/scroll/scroll-14.png',
-            15:'./imgs/scroll/scroll-15.png',
-            16:'./imgs/scroll/scroll-16.png'
-          };
-          // Global variable to control the scrolling behavior
-  const step = 30; // For each 30px, change an image
-  function trackScrollPosition() {
-    const y = window.scrollY;
-    const label = Math.min(Math.floor(y/230) + 1, 40);
-    const imageToUse = scrollImages[label];
-    // Change the background image
-    $('.image-container').delay(100).css('background-image', `url('${imageToUse}')`);
-   
-  }
-  $(document).ready(()=>{
-    $(window).scroll(()=>{
-      trackScrollPosition();
-    })
-  });
-  // Scroll to specific values
-  // scrollTo is the same
-  
-  
-  
-  
-  // Select all links with hashes
-  $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
-        }
-      }
-    });
-        </script>
+        <script src="js/scroll.js"></script>
+        <script src="js/mail.js"></script>
   </body>
   </html>
